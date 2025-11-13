@@ -10,4 +10,4 @@ app.use(express.json());
 app.use("/api/Clase1", rutillas)
 
 
-app.listen(3000, ()=>console.log("El API comenzó en el puerto: 3000"));
+app.listen(3000, ()=>console.log("El API ha comenzado en el puerto: 3000"));
