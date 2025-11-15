@@ -12,8 +12,8 @@ export const connectToMongoDB = async(): Promise<void> => {
         const urlMongo = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.CLUSTER}.jgonzys.mongodb.net/?appName=${process.env.CLUSTER}`;
         client = new MongoClient(urlMongo);
         await client.connect();
-        db = client.db("DBClaseInicial");
-        console.log("Conectado a mongo Maní!");
+        db = client.db("Practica3");
+        console.log("Conectado a Mongo!");
 
 
     }catch(err){
